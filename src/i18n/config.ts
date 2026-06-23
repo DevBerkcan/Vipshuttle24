@@ -8,12 +8,14 @@ export const localizedPaths = {
     impressum: '/impressum',
     datenschutz: '/datenschutz',
     agb: '/agb',
+    personenschutzDetail: '/personenschutz',
   },
   en: {
     home: '/en',
     impressum: '/en/legal-notice',
     datenschutz: '/en/privacy-policy',
     agb: '/en/terms-and-conditions',
+    personenschutzDetail: '/en/close-protection',
   },
 } as const;
 

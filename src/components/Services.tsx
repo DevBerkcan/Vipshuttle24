@@ -1,18 +1,20 @@
 'use client';
 
-import { FaShuttleVan, FaPlane, FaBriefcase, FaCar, FaBus, FaStar, FaArrowRight, FaGlassCheers } from 'react-icons/fa';
+import Link from 'next/link';
+import { FaShuttleVan, FaPlane, FaBriefcase, FaCar, FaBus, FaStar, FaArrowRight, FaGlassCheers, FaUserShield } from 'react-icons/fa';
 import Image from 'next/image';
 import { useLang } from '@/i18n/LangContext';
 
-const ICONS = [FaShuttleVan, FaPlane, FaBriefcase, FaCar, FaBus, FaStar, FaGlassCheers];
+const ICONS = [FaShuttleVan, FaPlane, FaBriefcase, FaCar, FaBus, FaStar, FaGlassCheers, FaUserShield];
 
 const IMAGES = [
-  { src: '/44.jpg',  alt: 'VipShuttle24 VIP Chauffeur Service – Mercedes S-Klasse', position: 'center 65%', mobilePosition: 'center 60%' },
-  { src: '/22.jpg',  alt: 'VipShuttle24 Airport Transfer Düsseldorf – Mercedes Chauffeur am Flughafen', position: 'center 55%', mobilePosition: 'center 50%' },
-  { src: '/24.jpg',  alt: 'VipShuttle24 Corporate Roadshow NRW – Business Chauffeur Service', position: 'bottom', mobilePosition: 'center' },
-  { src: '/8.webp',  alt: 'VipShuttle24 Gruppenbus & Sprinter Düsseldorf – Mercedes Sprinter und V-Klasse', position: 'center', mobilePosition: 'center' },
-  { src: '/33.JPG',  alt: 'VipShuttle24 VIP Service – Premium Chauffeur NRW', position: 'center', mobilePosition: 'center' },
-  { src: '/45.jpg',  alt: 'VipShuttle24 VIP Chauffeur Service – Mercedes S-Klasse', position: 'center', mobilePosition: 'center' },
+  { src: '/44.jpg', alt: 'VipShuttle24 VIP Chauffeur Service – Mercedes S-Klasse', position: 'center 65%', mobilePosition: 'center 60%' },
+  { src: '/22.jpg', alt: 'VipShuttle24 Airport Transfer Düsseldorf – Mercedes Chauffeur am Flughafen', position: 'center 55%', mobilePosition: 'center 50%' },
+  { src: '/24.jpg', alt: 'VipShuttle24 Corporate Roadshow NRW – Business Chauffeur Service', position: 'bottom', mobilePosition: 'center' },
+  { src: '/8.webp', alt: 'VipShuttle24 Gruppenbus & Sprinter Düsseldorf – Mercedes Sprinter und V-Klasse', position: 'center', mobilePosition: 'center' },
+  { src: '/33.JPG', alt: 'VipShuttle24 VIP Service – Premium Chauffeur NRW', position: 'center', mobilePosition: 'center' },
+  { src: '/45.jpg', alt: 'VipShuttle24 VIP Chauffeur Service – Mercedes S-Klasse', position: 'center', mobilePosition: 'center' },
+  { src: '/57.png', alt: 'VipShuttle24 Personenschutz – diskreter Security & Chauffeur Service', position: 'center', mobilePosition: 'center' },
 ];
 
 const Services = () => {
@@ -29,7 +31,6 @@ const Services = () => {
       <div className="absolute bottom-0 left-0 w-64 sm:w-96 h-64 sm:h-96 bg-platinum/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-20">
           <div className="inline-block px-5 py-2 glass-card mb-5">
             <span className="text-silver text-xs sm:text-sm font-medium tracking-widest uppercase">
@@ -45,7 +46,11 @@ const Services = () => {
         <div className="space-y-6 sm:space-y-8">
           {s.items.map((service, index) => {
             const Icon = ICONS[index] ?? FaCar;
-            const img  = IMAGES[index] ?? IMAGES[0];
+            const img = IMAGES[index] ?? IMAGES[0];
+
+            // Personenschutz is the last service item
+            const isPersonenschutz = index === s.items.length - 1;
+
             return (
               <article
                 key={service.title}
@@ -53,7 +58,6 @@ const Services = () => {
                 style={{ animation: `slideUp 0.8s ease-out ${index * 0.15}s both` }}
               >
                 <div className={`flex flex-col lg:grid lg:grid-cols-2 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-
                   {/* ── IMAGE ── */}
                   <div
                     className={`relative h-64 sm:h-80 lg:h-auto lg:min-h-[380px] overflow-hidden ${
@@ -81,6 +85,7 @@ const Services = () => {
                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-silver/20 to-platinum/20 rounded-xl flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
                       <Icon className="text-2xl sm:text-3xl text-silver" aria-hidden="true" />
                     </div>
+
                     <div>
                       <h3 className="text-2xl sm:text-3xl font-display font-bold text-silver mb-1 group-hover:text-silver-light transition-colors duration-300">
                         {service.title}
@@ -92,6 +97,7 @@ const Services = () => {
                         {service.description}
                       </p>
                     </div>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {service.features.map((feature: string) => (
                         <div key={feature} className="flex items-center space-x-2">
@@ -100,15 +106,25 @@ const Services = () => {
                         </div>
                       ))}
                     </div>
-                    <a
-                      href="#booking"
-                      className="inline-flex items-center space-x-2 text-silver hover:text-silver-light transition-colors duration-300 group/link w-fit"
-                    >
-                      <span className="font-medium text-sm sm:text-base">{s.cta}</span>
-                      <FaArrowRight className="text-sm group-hover/link:translate-x-1 transition-transform duration-300" aria-hidden="true" />
-                    </a>
-                  </div>
 
+                    {isPersonenschutz ? (
+                      <Link
+                        href="/personenschutz"
+                        className="inline-flex items-center space-x-2 text-silver hover:text-silver-light transition-colors duration-300 group/link w-fit"
+                      >
+                        <span className="font-medium text-sm sm:text-base">{s.ctaLearnMore}</span>
+                        <FaArrowRight className="text-sm group-hover/link:translate-x-1 transition-transform duration-300" aria-hidden="true" />
+                      </Link>
+                    ) : (
+                      <a
+                        href="#booking"
+                        className="inline-flex items-center space-x-2 text-silver hover:text-silver-light transition-colors duration-300 group/link w-fit"
+                      >
+                        <span className="font-medium text-sm sm:text-base">{s.cta}</span>
+                        <FaArrowRight className="text-sm group-hover/link:translate-x-1 transition-transform duration-300" aria-hidden="true" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </article>
             );
@@ -117,7 +133,9 @@ const Services = () => {
 
         <div className="mt-10 sm:mt-16 text-center glass-card p-6 sm:p-8">
           <p className="text-silver/80 mb-4 sm:mb-6 text-sm sm:text-lg">{s.bottomText}</p>
-          <a href="#booking" className="btn-primary inline-flex">{s.bottomCta}</a>
+          <a href="#booking" className="btn-primary inline-flex">
+            {s.bottomCta}
+          </a>
         </div>
       </div>
 

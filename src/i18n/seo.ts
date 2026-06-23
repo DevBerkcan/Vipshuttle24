@@ -26,25 +26,25 @@ export function getHomeMetadata(lang: Lang): Metadata {
       : 'Premium Chauffeur- und Limousinenservice in Duesseldorf und NRW. Diskrete Fahrer, Mercedes-Flotte, Flughafentransfers, Businessfahrten und VIP-Service rund um die Uhr.',
     keywords: isEnglish
       ? [
-          'VIP chauffeur service Germany',
-          'chauffeur service Düsseldorf',
-          'English speaking driver Germany',
-          'airport transfer Germany',
-          'luxury car service Germany',
-          'corporate roadshow Germany',
-          'private driver Düsseldorf',
-          'Mercedes chauffeur Germany',
-        ]
+        'VIP chauffeur service Germany',
+        'chauffeur service Düsseldorf',
+        'English speaking driver Germany',
+        'airport transfer Germany',
+        'luxury car service Germany',
+        'corporate roadshow Germany',
+        'private driver Düsseldorf',
+        'Mercedes chauffeur Germany',
+      ]
       : [
-          'Chauffeur Service Düsseldorf',
-          'Limousinenservice Düsseldorf',
-          'VIP Shuttle Düsseldorf',
-          'Flughafentransfer Düsseldorf',
-          'Business Transfer NRW',
-          'Mercedes Chauffeur Service',
-          'VIP Fahrservice Deutschland',
-          'Gruppentransfer NRW',
-        ],
+        'Chauffeur Service Düsseldorf',
+        'Limousinenservice Düsseldorf',
+        'VIP Shuttle Düsseldorf',
+        'Flughafentransfer Düsseldorf',
+        'Business Transfer NRW',
+        'Mercedes Chauffeur Service',
+        'VIP Fahrservice Deutschland',
+        'Gruppentransfer NRW',
+      ],
     alternates: getAlternates('home', lang),
     openGraph: {
       type: 'website',
@@ -126,7 +126,21 @@ export function getLegalMetadata(route: Exclude<RouteKey, 'home'>, lang: Lang): 
         description:
           'Information on personal protection, discretion and the safeguarding of VIP passengers’ personal data at VIPSHUTTLE24.',
       },
+
     },
+    personenschutzDetail: {
+      de: {
+        title: 'Personenschutz Düsseldorf, Köln & NRW',
+        description:
+          'Diskreter Personenschutz für VIPs, Geschäftsleute und Persönlichkeiten in Düsseldorf, Köln und ganz NRW. Geschulte Personenschützer, sichere Fahrzeuge, absolute Vertraulichkeit.',
+      },
+      en: {
+        title: 'Close Protection Germany',
+        description:
+          'Discreet close-protection services for VIPs, executives and high-profile clients across Germany. Trained officers, secure vehicles, absolute confidentiality.',
+      },
+    },
+
   } as const;
 
   const copy = pages[route][lang];
