@@ -34,35 +34,33 @@ export default function EnglishTermsPage() {
             <h1 className="text-3xl md:text-4xl font-display font-bold text-gradient mb-2">{a.h1}</h1>
           </div>
 
-          <section className="space-y-4">
-            {blocks.map((block) => (
-              <div key={block.title} className="glass-card p-5">
-                <h2 className="text-silver font-semibold mb-2">{block.title}</h2>
-                <p className="text-silver/70 text-sm leading-relaxed">{block.text}</p>
-              </div>
-            ))}
+          {blocks.map((block) => (
+            <section key={block.title}>
+              <h2 className="text-xl font-display font-semibold text-silver mb-4">{block.title}</h2>
+              <p className="text-silver/70 leading-relaxed text-sm">{block.text}</p>
+            </section>
+          ))}
 
-            <div className="glass-card p-5">
-              <h2 className="text-silver font-semibold mb-2">{a.storno.title}</h2>
-              <div className="text-silver/70 text-sm leading-relaxed space-y-2">
-                {[
-                  { label: a.storno.row1label, value: a.storno.row1value, color: 'text-green-400' },
-                  { label: a.storno.row2label, value: a.storno.row2value, color: 'text-yellow-400' },
-                  { label: a.storno.row3label, value: a.storno.row3value, color: 'text-orange-400' },
-                  { label: a.storno.row4label, value: a.storno.row4value, color: 'text-red-400' },
-                ].map((row) => (
-                  <div key={row.label} className="flex justify-between items-center py-1 border-b border-silver/10 last:border-0">
-                    <span>{row.label}</span>
-                    <span className={`${row.color} font-medium ml-4`}>{row.value}</span>
-                  </div>
-                ))}
-              </div>
+          <section>
+            <h2 className="text-xl font-display font-semibold text-silver mb-4">{a.storno.title}</h2>
+            <div className="text-silver/70 text-sm leading-relaxed space-y-2">
+              {[
+                { label: a.storno.row1label, value: a.storno.row1value, color: 'text-green-400' },
+                { label: a.storno.row2label, value: a.storno.row2value, color: 'text-yellow-400' },
+                { label: a.storno.row3label, value: a.storno.row3value, color: 'text-orange-400' },
+                { label: a.storno.row4label, value: a.storno.row4value, color: 'text-red-400' },
+              ].map((row) => (
+                <div key={row.label} className="flex justify-between items-center py-1 border-b border-silver/10 last:border-0">
+                  <span>{row.label}</span>
+                  <span className={`${row.color} font-medium ml-4`}>{row.value}</span>
+                </div>
+              ))}
             </div>
+          </section>
 
-            <div className="glass-card p-5">
-              <h2 className="text-silver font-semibold mb-2">{a.gericht.title}</h2>
-              <p className="text-silver/70 text-sm leading-relaxed">{a.gericht.text}</p>
-            </div>
+          <section>
+            <h2 className="text-xl font-display font-semibold text-silver mb-4">{a.gericht.title}</h2>
+            <p className="text-silver/70 leading-relaxed text-sm">{a.gericht.text}</p>
           </section>
 
           <div className="pt-4 border-t border-silver/10">
