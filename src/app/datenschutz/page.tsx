@@ -108,7 +108,6 @@ export default function Datenschutz() {
               <Link href={getPath(lang, 'impressum')} className="text-silver/50 hover:text-silver transition-colors">{lk.impressum}</Link>
               <Link href={getPath(lang, 'agb')} className="text-silver/50 hover:text-silver transition-colors">{lk.agb}</Link>
               <Link href={getPath(lang, 'home')} className="text-silver/50 hover:text-silver transition-colors">{lk.home}</Link>
-               <Link href={getPath(lang, 'personenschutz')} className="text-silver/50 hover:text-silver transition-colors">{lk.personenschutz}</Link>
             </div>
           </div>
         </div>

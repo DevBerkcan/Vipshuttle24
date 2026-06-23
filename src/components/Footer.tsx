@@ -121,7 +121,6 @@ const Footer = () => {
               <nav aria-label="Rechtliches" className="flex flex-wrap justify-center sm:justify-end gap-x-5 gap-y-2 text-sm">
                 <Link href={getPath(lang, 'impressum')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.impressum}</Link>
                 <Link href={getPath(lang, 'datenschutz')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.datenschutz}</Link>
-                <Link href={getPath(lang, 'personenschutz')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.personenschutz}</Link>
                 <Link href={getPath(lang, 'agb')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.agb}</Link>
               </nav>
             </div>
