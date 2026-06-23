@@ -115,6 +115,18 @@ export function getLegalMetadata(route: Exclude<RouteKey, 'home'>, lang: Lang): 
         description: 'Terms and conditions for VIPSHUTTLE24 chauffeur and transfer services.',
       },
     },
+    personenschutz: {
+      de: {
+        title: 'Personenschutz',
+        description:
+          'Informationen zum Personenschutz, zur Diskretion und zum Schutz personenbezogener Daten unserer VIP-Fahrgäste bei VIPSHUTTLE24.',
+      },
+      en: {
+        title: 'Personal Protection',
+        description:
+          'Information on personal protection, discretion and the safeguarding of VIP passengers’ personal data at VIPSHUTTLE24.',
+      },
+    },
   } as const;
 
   const copy = pages[route][lang];

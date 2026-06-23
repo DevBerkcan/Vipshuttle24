@@ -232,6 +232,7 @@ export const translations = {
       impressum: 'Impressum',
       datenschutz: 'Datenschutz',
       agb: 'AGB',
+      personenschutz: 'Personenschutz',
       whatsappLabel: 'WhatsApp Chat öffnen',
       fbLabel: 'VipShuttle24 auf Facebook',
       igLabel: 'VipShuttle24 auf Instagram',
@@ -336,6 +337,63 @@ export const translations = {
         s8p1:
           'Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von http:// auf https:// wechselt.',
       },
+      personenschutz: {
+  pageTitle: 'Personenschutz | VIPSHUTTLE24 Düsseldorf',
+  h1: 'Personenschutz',
+  intro:
+    'Diskretion, Sicherheit und Verschwiegenheit sind das Fundament unseres Services. Auf dieser Seite erfahren Sie, wie VIPSHUTTLE24 den persönlichen Schutz unserer Fahrgäste sicherstellt – im Fahrzeug, am Übergabepunkt und im Umgang mit personenbezogenen Daten.',
+
+  s1Title: '1. Schutz unserer Fahrgäste',
+  s1p1:
+    'Wir betreuen regelmäßig Persönlichkeiten aus Wirtschaft, Politik, Sport und Unterhaltung. Für diese Klientel gelten erhöhte Anforderungen an Schutz und Vertraulichkeit. Unsere Chauffeure sind im sicherheitsbewussten Fahren geschult, kennen die diskretesten Routen in Düsseldorf und NRW und sind darauf trainiert, in jeder Situation ruhig und professionell zu reagieren.',
+  s1Bullets: [
+    'Defensives, sicherheitsorientiertes Fahrtraining unserer Chauffeure',
+    'Diskrete Routenplanung – auch unter Vermeidung publikumsstarker Bereiche',
+    'Koordination mit persönlichem Security-Personal des Gastes auf Wunsch',
+    'Sichere Übergabepunkte an Hotels, Privatresidenzen und Veranstaltungsorten',
+    'Klare Kommunikationsprotokolle vor, während und nach der Fahrt',
+  ],
+
+  s2Title: '2. Diskretion & Verschwiegenheit',
+  s2p1:
+    'Jeder unserer Chauffeure ist zur absoluten Verschwiegenheit verpflichtet. Wir geben keine Informationen über Identität, Aufenthaltsorte, Reiserouten oder Begleitpersonen unserer Gäste an Dritte weiter – weder an Medien, noch an Geschäftspartner oder Behörden, sofern keine gesetzliche Pflicht besteht. Auf Wunsch unterzeichnen wir individuelle Vertraulichkeitsvereinbarungen (NDA).',
+  s2Bullets: [
+    'Verschwiegenheitsverpflichtung aller Mitarbeiter',
+    'NDA auf Anfrage – individuell oder unternehmensweit',
+    'Keine Veröffentlichung von Gästenamen oder Fotos ohne Freigabe',
+    'Trennung von Buchungs- und operativen Daten',
+  ],
+
+  s3Title: '3. Zusammenarbeit mit Sicherheitsdiensten',
+  s3p1:
+    'Bei Bedarf koordinieren wir unseren Service eng mit dem mitreisenden Sicherheitspersonal unserer Gäste oder mit externen Personenschutz-Dienstleistern. Wir stellen zusätzliche Begleitfahrzeuge, Konvoi-Lösungen und Vorausfahrer zur Verfügung. VIPSHUTTLE24 ist selbst kein zugelassener Personenschutz-Dienstleister im Sinne des § 34a GewO – wir sind ein spezialisierter Chauffeur-Service, der eng mit qualifizierten Sicherheitspartnern zusammenarbeitet.',
+
+  s4Title: '4. Schutz Ihrer personenbezogenen Daten',
+  s4p1:
+    'Über den allgemeinen Datenschutz hinaus (siehe Datenschutzerklärung) gelten für Personen, die unseren VIP-Service nutzen, besondere Schutzmaßnahmen für ihre personenbezogenen Daten:',
+  s4Bullets: [
+    'Minimale Datenerhebung – wir speichern nur, was für die Durchführung der Fahrt zwingend erforderlich ist',
+    'Pseudonymisierung sensibler Buchungen auf Wunsch (z. B. Code-Namen statt Klarnamen)',
+    'Keine Speicherung von GPS-Tracks oder Bewegungsprofilen nach Abschluss der Fahrt',
+    'Zugriff auf Fahrtdaten ausschließlich für autorisierte Mitarbeiter',
+    'Löschung aller Fahrtdaten spätestens nach gesetzlich vorgeschriebenen Aufbewahrungsfristen',
+  ],
+
+  s5Title: '5. Ihre Rechte als geschützte Person',
+  s5p1:
+    'Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Datenübertragbarkeit hinsichtlich Ihrer bei uns gespeicherten Daten (Art. 15–21 DSGVO). Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Zudem steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.',
+
+  s6Title: '6. Kontakt für Personenschutz-Anfragen',
+  s6p1:
+    'Für sicherheitsrelevante Anfragen, NDA-Vereinbarungen oder Anliegen zu Ihren Daten erreichen Sie uns vertraulich unter folgenden Kontaktdaten. Anfragen werden ausschließlich durch die Geschäftsleitung bearbeitet.',
+  s6Name: 'Ahmet Bostanci',
+  s6Company: 'Vipshuttle24',
+  s6Street: 'Schlesische Str. 104',
+  s6City: '40231 Düsseldorf',
+  s6Mobile: 'Mobil',
+  s6Email: 'E-Mail',
+},
+
       agb: {
         pageTitle: 'AGB | VIPSHUTTLE24 Düsseldorf',
         h1: 'Allgemeine Geschäftsbedingungen',
@@ -365,6 +423,7 @@ export const translations = {
         impressum: 'Impressum',
         datenschutz: 'Datenschutz',
         agb: 'AGB',
+        personenschutz: 'Personenschutz',
         home: 'Startseite',
       },
     },
@@ -603,6 +662,7 @@ export const translations = {
       copyright: (year: number) => `© ${year} VIPSHUTTLE24. All rights reserved.`,
       impressum: 'Legal Notice',
       datenschutz: 'Privacy Policy',
+      personenschutz: 'Personal Protection',
       agb: 'T&Cs',
       whatsappLabel: 'Open WhatsApp chat',
       fbLabel: 'VipShuttle24 on Facebook',
@@ -708,6 +768,63 @@ export const translations = {
         s8p1:
           'For security reasons, this site uses SSL or TLS encryption. You can recognise an encrypted connection by the browser address bar changing from http:// to https://.',
       },
+      personenschutz: {
+  pageTitle: 'Personal Protection | VIPSHUTTLE24 Düsseldorf',
+  h1: 'Personal Protection',
+  intro:
+    'Discretion, safety and confidentiality are the foundation of our service. This page explains how VIPSHUTTLE24 protects our passengers — inside the vehicle, at the handover point, and in the way we handle personal data.',
+
+  s1Title: '1. Protecting Our Passengers',
+  s1p1:
+    'We regularly transport personalities from business, politics, sports and entertainment. This clientele requires elevated standards of safety and confidentiality. Our chauffeurs are trained in security-aware driving, know the most discreet routes across Düsseldorf and Germany, and are prepared to respond calmly and professionally in any situation.',
+  s1Bullets: [
+    'Defensive, security-oriented driver training',
+    'Discreet route planning — avoiding crowded or high-exposure areas',
+    'Coordination with the guest’s personal security team on request',
+    'Secure handover points at hotels, private residences and venues',
+    'Clear communication protocols before, during and after the ride',
+  ],
+
+  s2Title: '2. Discretion & Confidentiality',
+  s2p1:
+    'Every one of our chauffeurs is bound to absolute confidentiality. We do not share information about the identity, whereabouts, itineraries or companions of our guests with any third party — neither with media, nor with business partners or authorities, unless legally required. On request, we sign individual non-disclosure agreements (NDAs).',
+  s2Bullets: [
+    'Confidentiality obligation for all staff',
+    'NDAs on request — individual or corporate-wide',
+    'No publication of guest names or photos without approval',
+    'Separation of booking data from operational data',
+  ],
+
+  s3Title: '3. Cooperation with Security Services',
+  s3p1:
+    'Where required, we coordinate closely with our guests’ accompanying security personnel or with external close-protection providers. We can supply additional escort vehicles, convoy formations and lead cars. VIPSHUTTLE24 is not itself a licensed close-protection provider under § 34a of the German Trade Regulation Act — we are a specialised chauffeur service working hand-in-hand with qualified security partners.',
+
+  s4Title: '4. Protection of Your Personal Data',
+  s4p1:
+    'Beyond the general data protection rules (see our Privacy Policy), specific safeguards apply to the personal data of guests using our VIP service:',
+  s4Bullets: [
+    'Minimal data collection — we store only what is strictly required to perform the ride',
+    'Pseudonymisation of sensitive bookings on request (e.g. code names instead of real names)',
+    'No retention of GPS traces or movement profiles after the ride is completed',
+    'Access to ride data is restricted to authorised staff only',
+    'Deletion of all ride data once statutory retention periods expire',
+  ],
+
+  s5Title: '5. Your Rights as a Protected Person',
+  s5p1:
+    'You have the right at any time to information, rectification, deletion, restriction of processing and data portability regarding the data we hold about you (Art. 15–21 GDPR). Any consent you have given can be revoked at any time with effect for the future. You also have the right to lodge a complaint with the competent supervisory authority.',
+
+  s6Title: '6. Contact for Personal Protection Enquiries',
+  s6p1:
+    'For security-related enquiries, NDA agreements or questions about your data, please contact us confidentially using the details below. All enquiries are handled exclusively by management.',
+  s6Name: 'Ahmet Bostanci',
+  s6Company: 'Vipshuttle24',
+  s6Street: 'Schlesische Str. 104',
+  s6City: '40231 Düsseldorf',
+  s6Mobile: 'Mobile',
+  s6Email: 'Email',
+},
+
       agb: {
         pageTitle: 'T&Cs | VIPSHUTTLE24 Düsseldorf',
         h1: 'Terms & Conditions',
@@ -737,6 +854,7 @@ export const translations = {
         impressum: 'Legal Notice',
         datenschutz: 'Privacy Policy',
         agb: 'T&Cs',
+        personenschutz: 'Personal Protection',
         home: 'Home',
       },
     },

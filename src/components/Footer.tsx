@@ -13,9 +13,13 @@ const Footer = () => {
 
   return (
     <>
-      <a href="https://wa.me/+491772472408" target="_blank" rel="noopener noreferrer"
+      <a
+        href="https://wa.me/+491772472408"
+        target="_blank"
+        rel="noopener noreferrer"
         className="hidden sm:flex fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-br from-silver to-platinum rounded-full items-center justify-center shadow-glow-lg hover:shadow-glow transition-all duration-300 hover:scale-110 z-40"
-        aria-label={f.whatsappLabel}>
+        aria-label={f.whatsappLabel}
+      >
         <FaWhatsapp className="text-midnight text-2xl" aria-hidden="true" />
       </a>
 
@@ -33,16 +37,31 @@ const Footer = () => {
                 <p className="text-silver/60 text-sm leading-relaxed">{f.tagline}</p>
               </div>
               <div className="flex space-x-3">
-                <a href="https://www.facebook.com/people/VipShuttle24de/100070007923784/" target="_blank" rel="noopener noreferrer"
-                  aria-label={f.fbLabel} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group">
+                <a
+                  href="https://www.facebook.com/people/VipShuttle24de/100070007923784/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={f.fbLabel}
+                  className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group"
+                >
                   <FaFacebook className="text-silver/70 group-hover:text-silver transition-colors duration-300" />
                 </a>
-                <a href="https://www.instagram.com/vipshuttle24.de/" target="_blank" rel="noopener noreferrer"
-                  aria-label={f.igLabel} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group">
+                <a
+                  href="https://www.instagram.com/vipshuttle24.de/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={f.igLabel}
+                  className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group"
+                >
                   <FaInstagram className="text-silver/70 group-hover:text-silver transition-colors duration-300" />
                 </a>
-                <a href="https://wa.me/+491772472408" target="_blank" rel="noopener noreferrer"
-                  aria-label={f.waLabel} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group">
+                <a
+                  href="https://wa.me/+491772472408"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={f.waLabel}
+                  className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group"
+                >
                   <FaWhatsapp className="text-silver/70 group-hover:text-silver transition-colors duration-300" />
                 </a>
               </div>
@@ -80,8 +99,13 @@ const Footer = () => {
                   <FaEnvelope className="text-platinum mt-1 flex-shrink-0 group-hover:text-silver transition-colors duration-300" aria-hidden="true" />
                   <div className="text-sm">info@vipshuttle24.de</div>
                 </a>
-                <a href="https://maps.google.com/?q=Schlesische+Str.+104+40231+Düsseldorf" target="_blank" rel="noopener noreferrer"
-                  className="flex items-start space-x-3 text-silver/60 hover:text-silver transition-colors duration-300 group" aria-label={f.addressLabel}>
+                <a
+                  href="https://maps.google.com/?q=Schlesische+Str.+104+40231+Düsseldorf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start space-x-3 text-silver/60 hover:text-silver transition-colors duration-300 group"
+                  aria-label={f.addressLabel}
+                >
                   <FaMapMarkerAlt className="text-platinum mt-1 flex-shrink-0 group-hover:text-silver transition-colors duration-300" aria-hidden="true" />
                   <div className="text-sm">Schlesische Str. 104<br />40231 Düsseldorf</div>
                 </a>
@@ -94,9 +118,10 @@ const Footer = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-silver/50 text-xs sm:text-sm text-center sm:text-left">{f.copyright(currentYear)}</p>
-              <nav aria-label="Rechtliches" className="flex space-x-5 text-sm">
+              <nav aria-label="Rechtliches" className="flex flex-wrap justify-center sm:justify-end gap-x-5 gap-y-2 text-sm">
                 <Link href={getPath(lang, 'impressum')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.impressum}</Link>
                 <Link href={getPath(lang, 'datenschutz')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.datenschutz}</Link>
+                <Link href={getPath(lang, 'personenschutz')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.personenschutz}</Link>
                 <Link href={getPath(lang, 'agb')} className="text-silver/50 hover:text-silver transition-colors duration-300 text-xs sm:text-sm">{f.agb}</Link>
               </nav>
             </div>
