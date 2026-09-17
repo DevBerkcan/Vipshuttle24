@@ -157,7 +157,7 @@ Multiple contact methods prominently displayed:
 - **Phone**: +49 177 2472408 (click-to-call)
 - **WhatsApp**: Floating button + direct links
 - **Email**: info@vipshuttle24.de
-- **Address**: Schlesische Str. 104, 40231 Düsseldorf
+- **Address**: Ludwigshafener Straße 35b, 40229 Düsseldorf
 
 ## 🎯 Target Audience Features
 

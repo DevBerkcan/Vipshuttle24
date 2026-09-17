@@ -54,9 +54,9 @@ const localBusinessJsonLd = {
   email: "info@vipshuttle24.de",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Schlesische Str. 104",
+    streetAddress: "Ludwigshafener Straße 35b",
     addressLocality: "Düsseldorf",
-    postalCode: "40231",
+    postalCode: "40229",
     addressCountry: "DE",
   },
   geo: {
@@ -108,7 +108,7 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Berlin Brandenburg Airport" },
     { "@type": "City", name: "Cologne Bonn Airport" },
   ],
-  hasMap: "https://maps.google.com/?q=Schlesische+Str.+104+40231+Düsseldorf",
+  hasMap: "https://maps.google.com/?q=Ludwigshafener+Straße+35b+40229+Düsseldorf",
   currenciesAccepted: "EUR",
   paymentAccepted: "Credit Card, Bank Transfer",
 };

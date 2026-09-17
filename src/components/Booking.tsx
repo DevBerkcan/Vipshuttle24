@@ -85,10 +85,10 @@ const Booking = () => {
                 <div>
                   <div className="text-xs text-platinum mb-0.5 font-medium tracking-wider uppercase">{b.contact.address}</div>
                   <address className="not-italic">
-                    <div className="text-silver font-semibold text-sm sm:text-base">Schlesische Str. 104</div>
-                    <div className="text-silver font-semibold text-sm sm:text-base mb-1">40231 Düsseldorf</div>
+                    <div className="text-silver font-semibold text-sm sm:text-base">Ludwigshafener Straße 35b</div>
+                    <div className="text-silver font-semibold text-sm sm:text-base mb-1">40229 Düsseldorf</div>
                   </address>
-                  <a href="https://maps.google.com/?q=Schlesische+Str.+104+40231+Düsseldorf" target="_blank" rel="noopener noreferrer"
+                  <a href="https://maps.google.com/?q=Ludwigshafener+Straße+35b+40229+Düsseldorf" target="_blank" rel="noopener noreferrer"
                     className="text-platinum text-xs hover:text-silver transition-colors duration-300">{b.contact.mapLink}</a>
                 </div>
               </div>

@@ -100,14 +100,14 @@ const Footer = () => {
                   <div className="text-sm">info@vipshuttle24.de</div>
                 </a>
                 <a
-                  href="https://maps.google.com/?q=Schlesische+Str.+104+40231+Düsseldorf"
+                  href="https://maps.google.com/?q=Ludwigshafener+Straße+35b+40229+Düsseldorf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start space-x-3 text-silver/60 hover:text-silver transition-colors duration-300 group"
                   aria-label={f.addressLabel}
                 >
                   <FaMapMarkerAlt className="text-platinum mt-1 flex-shrink-0 group-hover:text-silver transition-colors duration-300" aria-hidden="true" />
-                  <div className="text-sm">Schlesische Str. 104<br />40231 Düsseldorf</div>
+                  <div className="text-sm">Ludwigshafener Straße 35b<br />40229 Düsseldorf</div>
                 </a>
               </address>
             </div>
