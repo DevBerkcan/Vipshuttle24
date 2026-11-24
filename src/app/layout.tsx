@@ -12,14 +12,14 @@ export const viewport: Viewport = {
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vipshuttle-24.de"),
+  metadataBase: new URL("https://vipshuttle24.de"),
   title: {
     default: "VIPSHUTTLE24",
     template: "%s | VIPSHUTTLE24",
   },
   description:
     "VIPSHUTTLE24 offers premium chauffeur, airport transfer and VIP transportation services from Düsseldorf across Germany and Europe.",
-  authors: [{ name: "VIPSHUTTLE24", url: "https://vipshuttle-24.de" }],
+  authors: [{ name: "VIPSHUTTLE24", url: "https://vipshuttle24.de" }],
   creator: "VIPSHUTTLE24",
   publisher: "VIPSHUTTLE24",
   robots: {
@@ -44,12 +44,12 @@ export const metadata: Metadata = {
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://vipshuttle-24.de/#business",
+  "@id": "https://vipshuttle24.de/#business",
   name: "VIPSHUTTLE24",
   alternateName: ["VIP Shuttle 24", "Vipshuttle24", "VIPSHUTTLE 24"],
   description:
     "VIPSHUTTLE24 is a professional VIP chauffeur and luxury car service based in Düsseldorf, Germany. We provide English-speaking, discreet drivers for celebrities, business executives, politicians, athletes, delegations, and VIP clients throughout Germany and Europe. Our fleet consists exclusively of Mercedes-Benz vehicles including the S-Class, E-Class, V-Class, Sprinter, and Tourismo coach. Services include VIP airport transfers, corporate roadshows, celebrity transport, private hire, group transfers, and 24/7 on-call chauffeur service.",
-  url: "https://vipshuttle-24.de",
+  url: "https://vipshuttle24.de",
   telephone: "+491772472408",
   email: "info@vipshuttle24.de",
   address: {
@@ -78,8 +78,8 @@ const localBusinessJsonLd = {
     "https://www.instagram.com/vipshuttle24.de/",
   ],
   priceRange: "€€€",
-  image: "https://vipshuttle-24.de/1.webp",
-  logo: "https://vipshuttle-24.de/logo2.webp",
+  image: "https://vipshuttle24.de/1.webp",
+  logo: "https://vipshuttle24.de/logo2.webp",
   knowsLanguage: ["de", "en", "tr"],
   areaServed: [
     { "@type": "Country", name: "Germany" },
@@ -116,18 +116,18 @@ const localBusinessJsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://vipshuttle-24.de/#website",
-  url: "https://vipshuttle-24.de",
+  "@id": "https://vipshuttle24.de/#website",
+  url: "https://vipshuttle24.de",
   name: "VIPSHUTTLE24",
   description:
     "VIP Chauffeur & Luxury Car Service Germany – Premium Limousinenservice Düsseldorf und NRW",
-  publisher: { "@id": "https://vipshuttle-24.de/#business" },
+  publisher: { "@id": "https://vipshuttle24.de/#business" },
 };
 
 const serviceListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": "https://vipshuttle-24.de/#services",
+  "@id": "https://vipshuttle24.de/#services",
   name: "VIPSHUTTLE24 Services – VIP Chauffeur & Luxury Transportation Germany",
   itemListElement: [
     {
@@ -135,11 +135,11 @@ const serviceListJsonLd = {
       position: 1,
       item: {
         "@type": "Service",
-        "@id": "https://vipshuttle-24.de/#vip-chauffeur-service",
+        "@id": "https://vipshuttle24.de/#vip-chauffeur-service",
         name: "VIP & Celebrity Chauffeur Service Germany",
         description:
           "Dedicated VIP chauffeur service for celebrities, business executives, politicians, athletes, and high-net-worth individuals throughout Germany. English-speaking, discreet drivers available 24/7. Mercedes S-Class and E-Class fleet.",
-        provider: { "@id": "https://vipshuttle-24.de/#business" },
+        provider: { "@id": "https://vipshuttle24.de/#business" },
         areaServed: { "@type": "Country", name: "Germany" },
         serviceType: "VIP Chauffeur Service",
       },
@@ -149,11 +149,11 @@ const serviceListJsonLd = {
       position: 2,
       item: {
         "@type": "Service",
-        "@id": "https://vipshuttle-24.de/#airport-transfer-germany",
+        "@id": "https://vipshuttle24.de/#airport-transfer-germany",
         name: "VIP Airport Transfer Germany",
         description:
           "Professional VIP airport transfers to and from all major German airports: Düsseldorf (DUS), Frankfurt (FRA), Munich (MUC), Hamburg (HAM), Berlin Brandenburg (BER), and Cologne/Bonn (CGN). Real-time flight monitoring, meet & greet service with name board, luggage assistance included.",
-        provider: { "@id": "https://vipshuttle-24.de/#business" },
+        provider: { "@id": "https://vipshuttle24.de/#business" },
         areaServed: { "@type": "Country", name: "Germany" },
         serviceType: "Airport Transfer",
       },
@@ -163,11 +163,11 @@ const serviceListJsonLd = {
       position: 3,
       item: {
         "@type": "Service",
-        "@id": "https://vipshuttle-24.de/#corporate-roadshow",
+        "@id": "https://vipshuttle24.de/#corporate-roadshow",
         name: "Corporate Roadshow & Business Travel Germany",
         description:
           "Professional corporate roadshow logistics and executive travel throughout Germany and Europe. Coordination for delegations, investor roadshows, and trade fair transfers including Messe Düsseldorf, Hannover Messe, IAA Frankfurt, and Bauma Munich. English-speaking drivers, fixed pricing.",
-        provider: { "@id": "https://vipshuttle-24.de/#business" },
+        provider: { "@id": "https://vipshuttle24.de/#business" },
         areaServed: [
           { "@type": "Country", name: "Germany" },
           { "@type": "Continent", name: "Europe" },
@@ -180,11 +180,11 @@ const serviceListJsonLd = {
       position: 4,
       item: {
         "@type": "Service",
-        "@id": "https://vipshuttle-24.de/#luxury-car-service-germany",
+        "@id": "https://vipshuttle24.de/#luxury-car-service-germany",
         name: "Luxury Car Service Germany",
         description:
           "Premium Mercedes-Benz chauffeur service across Germany. S-Class, E-Class, V-Class and Sprinter fleet for private clients, celebrities, athletes and business travelers. Fixed-price guarantee, no hidden fees.",
-        provider: { "@id": "https://vipshuttle-24.de/#business" },
+        provider: { "@id": "https://vipshuttle24.de/#business" },
         areaServed: { "@type": "Country", name: "Germany" },
         serviceType: "Luxury Car Service",
       },
@@ -194,11 +194,11 @@ const serviceListJsonLd = {
       position: 5,
       item: {
         "@type": "Service",
-        "@id": "https://vipshuttle-24.de/#group-coach-transfer",
+        "@id": "https://vipshuttle24.de/#group-coach-transfer",
         name: "Group Transfer & Coach Hire Germany",
         description:
           "Luxury group transfers and coach hire in Germany for up to 50 passengers. Mercedes-Benz Sprinter and Tourismo coach for corporate events, tour groups, sports teams and concert tours.",
-        provider: { "@id": "https://vipshuttle-24.de/#business" },
+        provider: { "@id": "https://vipshuttle24.de/#business" },
         areaServed: { "@type": "Country", name: "Germany" },
         serviceType: "Group Transportation",
       },
@@ -210,7 +210,7 @@ const serviceListJsonLd = {
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "@id": "https://vipshuttle-24.de/#faq-de",
+  "@id": "https://vipshuttle24.de/#faq-de",
   mainEntity: [
     {
       "@type": "Question",
@@ -251,7 +251,7 @@ const faqJsonLd = {
 const faqEnJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "@id": "https://vipshuttle-24.de/#faq-en",
+  "@id": "https://vipshuttle24.de/#faq-en",
   mainEntity: [
     {
       "@type": "Question",
