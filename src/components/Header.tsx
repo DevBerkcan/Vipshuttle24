@@ -20,10 +20,10 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: t.nav.services, href: '#services' },
-    { name: t.nav.fleet,    href: '#fleet'    },
-    { name: t.nav.gallery,  href: '#gallery'  },
-    { name: t.nav.booking,  href: '#booking'  },
+    { name: t.nav.services, href: `${getPath(lang, 'home')}#services` },
+    { name: t.nav.fleet,    href: `${getPath(lang, 'home')}#fleet`    },
+    { name: t.nav.gallery,  href: `${getPath(lang, 'home')}#gallery`  },
+    { name: t.nav.booking,  href: `${getPath(lang, 'home')}#booking`  },
   ];
 
   return (

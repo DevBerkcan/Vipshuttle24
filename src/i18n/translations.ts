@@ -17,8 +17,8 @@ export const translations = {
     },
     hero: {
       badge: 'Premium Chauffeur Service Düsseldorf',
-      headline1: 'Ihre Reise beginnt',
-      headline2: 'mit Exzellenz',
+      headline1: 'Chauffeur- und Limousinenservice',
+      headline2: 'in Düsseldorf',
       description:
         'Erstklassiger Chauffeur-Service in Düsseldorf und NRW. Diskretion, Pünktlichkeit und Komfort auf höchstem Niveau.',
       cta1: 'Jetzt buchen',

@@ -73,7 +73,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {f.navItems.map((item) => (
                   <li key={item.href}>
-                    <a href={item.href} className="text-silver/60 hover:text-silver transition-colors duration-300 text-sm">{item.label}</a>
+                    <a href={item.href.startsWith('#') ? `${getPath(lang, 'home')}${item.href}` : item.href} className="text-silver/60 hover:text-silver transition-colors duration-300 text-sm">{item.label}</a>
                   </li>
                 ))}
               </ul>

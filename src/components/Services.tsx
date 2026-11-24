@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { FaShuttleVan, FaPlane, FaBriefcase, FaCar, FaBus, FaStar, FaArrowRight, FaGlassCheers, FaUserShield } from 'react-icons/fa';
 import Image from 'next/image';
 import { useLang } from '@/i18n/LangContext';
+import { getPath } from '@/i18n/config';
 
 const ICONS = [FaShuttleVan, FaPlane, FaBriefcase, FaCar, FaBus, FaStar, FaGlassCheers, FaUserShield];
 
@@ -18,7 +19,7 @@ const IMAGES = [
 ];
 
 const Services = () => {
-  const { t } = useLang();
+  const { lang, t } = useLang();
   const s = t.services;
 
   return (
@@ -48,8 +49,13 @@ const Services = () => {
             const Icon = ICONS[index] ?? FaCar;
             const img = IMAGES[index] ?? IMAGES[0];
 
-            // Personenschutz is the last service item
-            const isPersonenschutz = index === s.items.length - 1;
+            const detail = index === s.items.length - 1
+              ? { href: getPath(lang, 'personenschutzDetail'), label: s.ctaLearnMore }
+              : lang === 'de' && index === 1
+                ? { href: '/flughafentransfer-duesseldorf', label: 'Flughafentransfer Düsseldorf' }
+                : lang === 'de' && index === 4
+                  ? { href: '/messe-shuttle-duesseldorf', label: 'Messe-Shuttle Düsseldorf' }
+                  : null;
 
             return (
               <article
@@ -107,12 +113,12 @@ const Services = () => {
                       ))}
                     </div>
 
-                    {isPersonenschutz ? (
+                    {detail ? (
                       <Link
-                        href="/personenschutz"
+                        href={detail.href}
                         className="inline-flex items-center space-x-2 text-silver hover:text-silver-light transition-colors duration-300 group/link w-fit"
                       >
-                        <span className="font-medium text-sm sm:text-base">{s.ctaLearnMore}</span>
+                        <span className="font-medium text-sm sm:text-base">{detail.label}</span>
                         <FaArrowRight className="text-sm group-hover/link:translate-x-1 transition-transform duration-300" aria-hidden="true" />
                       </Link>
                     ) : (

@@ -20,10 +20,10 @@ export function getHomeMetadata(lang: Lang): Metadata {
   return {
     title: isEnglish
       ? 'VIP Chauffeur Service Germany | English-Speaking Drivers'
-      : 'Chauffeur Service Duesseldorf | Premium Limousinenservice',
+      : 'Chauffeurservice Düsseldorf | Limousinenservice',
     description: isEnglish
       ? 'VIP chauffeur service in Germany with English-speaking drivers, luxury Mercedes fleet, airport transfers, roadshows and private hire from Düsseldorf across Germany and Europe.'
-      : 'Premium Chauffeur- und Limousinenservice in Duesseldorf und NRW. Diskrete Fahrer, Mercedes-Flotte, Flughafentransfers, Businessfahrten und VIP-Service rund um die Uhr.',
+      : 'Premium Chauffeur- und Limousinenservice in Düsseldorf und NRW. Diskrete Fahrer, Mercedes-Flotte, Flughafentransfers, Businessfahrten und VIP-Service rund um die Uhr.',
     keywords: isEnglish
       ? [
         'VIP chauffeur service Germany',
