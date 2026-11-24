@@ -1,6 +1,6 @@
 import type { Lang } from './translations';
 
-export const siteUrl = 'https://vipshuttle-24.de';
+export const siteUrl = 'https://vipshuttle24.de';
 
 export const localizedPaths = {
   de: {
