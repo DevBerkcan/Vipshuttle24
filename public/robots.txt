@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://vipshuttle-24.de/sitemap.xml
+Sitemap: https://vipshuttle24.de/sitemap.xml
